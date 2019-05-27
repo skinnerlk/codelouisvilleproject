@@ -1,0 +1,112 @@
+/******************************
+Flexbox Layout
+*******************************/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,700&display=swap');
+
+.container,
+.main-nav,
+title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3.5em;
+    color: #0167B8;
+    margin: 0; 
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+.container {
+  background-color: #DCE0D8;
+  height: 250px;
+  padding: 20px;
+}
+
+
+/* ---- Navigation ---- */
+
+.main-nav {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+a {
+  color: #787D81;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004175;
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 800px) {
+
+  .container,
+  .main-nav {
+    display: flex;
+    flex-direction: row; 
+    flex-grow: 1;
+  }
+
+  .title {
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  .main-nav { 
+    margin: 10px; 
+  }
+}
+
+@media (min-width: 1020px) {
+
+  .title {
+    flex: 2 0px;
+  }
+
+  .main-nav {
+    margin: 20px;
+    
+
+  }
+
+}
